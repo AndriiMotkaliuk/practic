@@ -17,15 +17,15 @@ $color-electric-violet: #8A40EE;
 $color-light-gray: #D9D9D9;
 $color-medium-redviolet: #C13584;
 
-$border-btn-color-primary: $orang-color;
-$border-btn-color-secondary: $periwinkle-gray;
+$border-btn-color-primary: $color-white;
+$border-btn-color-secondary: $color-medium-purple;
 $border-height: 50px;
 $btn-font-weight: 600;
 
-$border-color: $grey-light;
-$default-border: 1px solid $grey-light;
+$border-color: $color-medium-purple;
+$default-border: 1px solid $color-medium-purple;
 
-$default-body-color: $white-color;
+$default-body-color: $color-white;
 
 // fonts
 $default-font-name: 'Roboto';
