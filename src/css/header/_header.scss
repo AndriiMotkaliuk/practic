@@ -1,9 +1,3 @@
-.header {
-    border-bottom: $default-border;
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
+@import "./logo";
+@import "./menu";
+@import "./button";
