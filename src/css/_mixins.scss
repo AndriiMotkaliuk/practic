@@ -174,3 +174,13 @@
         @include dev-col($_col)
     }
 }
+
+@mixin font-family ($_weight: 400, $_size: 16px, $_color: #000, $_height: 160%, $_spacing: normal, $_family: $main-font, $_style: normal) {
+    font-weight: $_weight;
+    font-size: $_size;
+    color: $_color;
+    line-height: $_height;
+    letter-spacing: $_spacing;
+    font-family: $_family;
+    font-style: $_style;
+}
