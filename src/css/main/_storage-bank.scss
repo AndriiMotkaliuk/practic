@@ -14,10 +14,6 @@
     &__image-wrapper {
         width: 90%;
         margin: 0 auto;
-
-        @include media(sm) {
-            text-align: center;
-        }
     }
 
     // .storage__image
