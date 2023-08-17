@@ -1,0 +1,21 @@
+.navbar {}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0 0 0 105px;
+    list-style-type: none;
+
+    &__link {
+        @include font-family(500, 16px, $color-darkgray, 160%, normal, $main-font, normal);
+        text-decoration: none;
+        padding: 0 15px;
+
+        &:hover {
+            color: $color-electric-violet;
+        }
+    }
+
+
+}
