@@ -1,6 +1,7 @@
 $margin-left-img: 300px;
 
 .hero-block {
+    padding-bottom: $desktop-btm-padding;
 
     &__title {
         margin: 0;
@@ -8,11 +9,13 @@ $margin-left-img: 300px;
 
         @include media(md) {
             font-size: 50px;
+            padding-bottom: $md-sm-btm-padding;
 
         }
 
         @include media(sm) {
             font-size: 50px;
+            padding-bottom: $md-sm-btm-padding;
 
         }
     }
