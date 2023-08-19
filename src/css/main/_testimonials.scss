@@ -20,6 +20,7 @@
 
     &__right-backgroung-picture {
         position: absolute;
+        right: 0;
 
 
     }
@@ -28,7 +29,8 @@
 
     &__left-backgroung-picture {
         position: absolute;
-
+        top: 0;
+        left: 0;
 
     }
 
@@ -38,8 +40,8 @@
 
 .row {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+
     align-items: center;
 }
 
