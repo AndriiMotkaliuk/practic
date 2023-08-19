@@ -1,1 +1,5 @@
-.logo {}
+.logo {
+    @include media(md) {
+        margin-right: 15px;
+    }
+}
