@@ -1,43 +1,61 @@
 .storage-bank {
-    background-color: $color-medium-pink;
-    border-radius: 50px;
+    padding-bottom: $desktop-btm-padding;
+
+    @include media(md) {
+        padding-bottom: $md-sm-btm-padding;
+    }
+
+    @include media(sm) {
+        padding-bottom: $md-sm-btm-padding;
+    }
 }
 
 .storage {
 
     // .storage__container
 
-    &__container {}
+    &__container {
+        background-color: $color-medium-pink;
+        border-radius: 50px;
+    }
 
     // .storage__image-wrapper
 
-    &__image-wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
+    &__image-wrapper {}
 
     // .storage__image
 
     &__image {
-        padding-top: 10px;
+        display: block;
+
+        @include media(md) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include media(sm) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     // .storage__info
 
     &__info {
-        width: 90%;
-        margin: 0 auto;
+        max-width: 500px;
         padding-top: 70px;
         padding-bottom: 110px;
 
         @include media(md) {
-            padding-top: 15px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 0;
             padding-bottom: 15px;
         }
 
         @include media(sm) {
             text-align: center;
-            padding-top: 15px;
             padding-bottom: 15px;
         }
     }
@@ -46,6 +64,15 @@
 
     &__title {
         @include font-family(700, 40px, $color-darkblue, 130%, normal, $title-font-name);
+
+        @include media(md) {
+            margin-top: 0;
+        }
+
+        @include media(sm) {
+            margin-top: 0;
+        }
+
     }
 
     // .storage__text
