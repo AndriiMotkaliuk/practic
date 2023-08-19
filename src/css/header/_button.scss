@@ -4,7 +4,7 @@
         gap: 20px;
         box-shadow: $default-box-shadow;
 
-        @include media(sm) {
+        @include media(md) {
             display: none;
         }
     }

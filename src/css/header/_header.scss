@@ -6,11 +6,18 @@
     &__container {
         display: flex;
         align-items: center;
-        padding-top: 20px;
+        padding: 20px 15px;
 
-        @include media(sm) {
+        @include media(md) {
+            // display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            background-color: $color-white;
+            padding: 20px 0;
         }
     }
 }
