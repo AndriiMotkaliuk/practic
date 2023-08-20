@@ -72,7 +72,11 @@
     font-family: inherit;
     color: $color-darkgray;
     display: flex;
+    padding-bottom: $desktop-btm-padding;
 
+    @include media(md) {
+        padding-bottom: $md-sm-btm-padding;
+    }
 
     &__title {
         display: block;
@@ -93,6 +97,11 @@
         font-weight: 500;
         line-height: 160%;
         padding-bottom: 60px;
+        margin: 0 auto;
+
+        @include media(md) {
+            padding-bottom: $md-sm-btm-padding;
+        }
     }
 
     &__item {
