@@ -15,6 +15,7 @@
     // .storage__container
 
     &__container {
+        box-sizing: border-box;
         background-color: $color-medium-pink;
         border-radius: 50px;
     }
