@@ -1,7 +1,4 @@
 .testimonials {
-    position: relative;
-
-
 
     // .testimonials__container
 
@@ -9,19 +6,34 @@
         border-radius: 50px;
         background-color: $color-periwinkle;
         padding: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
 
     }
 
     // .testimonials__title
 
-    &__title {}
+    &__title {
+        font-family: $title-font;
+        font-size: 40px;
+        font-weight: 700;
+        color: $color-darkgray;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+
+    }
 
     // .testimonials__right-backgroung-picture
 
     &__right-backgroung-picture {
         position: absolute;
-        right: 0;
-
+        top: 0;
+        left: 0;
+        z-index: 0;
 
     }
 
@@ -29,9 +41,9 @@
 
     &__left-backgroung-picture {
         position: absolute;
+        right: 0;
         top: 0;
-        left: 0;
-
+        z-index: 0;
     }
 
 
@@ -40,21 +52,26 @@
 
 .row {
     display: flex;
-    flex-direction: column;
-
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+    margin-bottom: 80px;
 }
 
+
+
 .testimonial {
+    z-index: 1;
     background-color: $color-white ;
     border: $default-border;
     border-radius: 50px;
-    padding: 30px;
+    padding: 50px 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: $gap; // .testimonial__img
+    gap: $gap;
+
+    // .testimonial__img
 
     &__img {
         border-radius: 50%;
