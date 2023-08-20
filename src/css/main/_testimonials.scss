@@ -1,8 +1,6 @@
 .testimonials {
     margin: 0 auto;
 
-    // .testimonials__container
-
     &__container {
         border-radius: 50px;
         background-color: $color-periwinkle;
@@ -12,13 +10,7 @@
         flex-direction: column;
         margin-bottom: 120px;
         gap: 80px;
-
-
-
-
     }
-
-    // .testimonials__title
 
     &__title {
         font-family: $title-font;
@@ -31,8 +23,6 @@
 
     }
 
-    // .testimonials__right-backgroung-picture
-
     &__right-backgroung-picture {
         position: absolute;
         top: 0;
@@ -40,8 +30,6 @@
         z-index: 0;
 
     }
-
-    // .testimonials__left-backgroung-picture
 
     &__left-backgroung-picture {
         position: absolute;
@@ -71,9 +59,6 @@
 
 }
 
-
-
-
 .testimonial {
     z-index: 1;
     background-color: $color-white ;
@@ -83,24 +68,18 @@
     display: flex;
     gap: $gap;
 
-    // .testimonial__img
-
     &__img {
         border-radius: 50%;
         align-self: flex-start;
     }
 
     &__information {
-
         font-size: 16px;
-        // .testimonial__user-name
 
         &_user-name {
             font-weight: 500;
             color: $color-darkblue;
         }
-
-        // .testimonial__link
 
         &_link {
             font-size: 14px;
@@ -109,8 +88,6 @@
             font-weight: 500;
 
         }
-
-        // .testimonial__text
 
         &_text {
             font-weight: 400;
