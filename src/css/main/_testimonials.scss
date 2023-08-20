@@ -1,15 +1,29 @@
 .testimonials {
-    margin: 0 auto;
 
     &__container {
+        box-sizing: border-box;
         border-radius: 50px;
         background-color: $color-periwinkle;
-        padding: 70px;
+        padding: 65px 100px 80px;
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-bottom: 120px;
-        gap: 80px;
+        margin-bottom: $desktop-btm-padding;
+        gap: 65px;
+
+        @include media(md) {
+            box-sizing: border-box;
+            padding-bottom: $md-sm-btm-padding;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            gap: 30px;
+        }
+
+        @include media(sm) {
+            box-sizing: border-box;
+            padding-bottom: $md-sm-btm-padding;
+            padding: 30px 140px 50px;
+        }
     }
 
     &__title {
@@ -51,9 +65,12 @@
         gap: 100px;
 
         @include media(md) {
-            flex-direction: column;
+            gap: 45px;
         }
 
+        @include media(sm) {
+            flex-direction: column;
+        }
 
     }
 
