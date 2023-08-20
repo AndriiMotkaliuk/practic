@@ -22,8 +22,9 @@
         @include media(sm) {
             box-sizing: border-box;
             padding-bottom: $md-sm-btm-padding;
-            padding: 30px 140px 50px;
+            padding: 30px 110px 50px;
         }
+
     }
 
     &__title {
