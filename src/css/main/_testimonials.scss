@@ -1,0 +1,119 @@
+.testimonials {
+
+    &__container {
+        box-sizing: border-box;
+        border-radius: 50px;
+        background-color: $color-periwinkle;
+        padding: 65px 100px 80px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $desktop-btm-padding;
+        gap: 65px;
+
+        @include media(md) {
+            box-sizing: border-box;
+            padding-bottom: $md-sm-btm-padding;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            gap: 30px;
+        }
+
+        @include media(sm) {
+            box-sizing: border-box;
+            padding-bottom: $md-sm-btm-padding;
+            padding: 30px 110px 50px;
+        }
+
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-size: 40px;
+        font-weight: 700;
+        color: $color-darkgray;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+
+    }
+
+    &__right-backgroung-picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+    }
+
+    &__left-backgroung-picture {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+
+        @include media(md) {
+            display: none;
+
+        }
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 100px;
+
+        @include media(md) {
+            gap: 45px;
+        }
+
+        @include media(sm) {
+            flex-direction: column;
+        }
+
+    }
+
+}
+
+.testimonial {
+    z-index: 1;
+    background-color: $color-white ;
+    border: $default-border;
+    border-radius: 50px;
+    padding: 50px 30px;
+    display: flex;
+    gap: $gap;
+
+    &__img {
+        border-radius: 50%;
+        align-self: flex-start;
+    }
+
+    &__information {
+        font-size: 16px;
+
+        &_user-name {
+            font-weight: 500;
+            color: $color-darkblue;
+        }
+
+        &_link {
+            font-size: 14px;
+            text-decoration: none;
+            color: $color-medium-purple;
+            font-weight: 500;
+
+        }
+
+        &_text {
+            font-weight: 400;
+            color: $color-darkgray;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
