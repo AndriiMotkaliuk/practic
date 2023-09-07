@@ -1,8 +1,8 @@
 .try-free {
-    margin-bottom: $desktop-btm-padding;
+    padding-bottom: $desktop-btm-padding;
 
     @include media(md) {
-        margin-bottom: $md-sm-btm-padding;
+        padding-bottom: $md-sm-btm-padding;
     }
 
     &__left-side {
@@ -47,6 +47,12 @@
             justify-content: center;
         }
 
+        @include media(xxxs) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
 
         &_button-white {
             gap: 20px;

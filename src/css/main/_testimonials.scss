@@ -13,9 +13,8 @@
 
         @include media(md) {
             box-sizing: border-box;
-            padding-bottom: $md-sm-btm-padding;
+            margin-bottom: $md-sm-btm-padding;
             padding-top: 30px;
-            padding-bottom: 50px;
             gap: 30px;
         }
 
