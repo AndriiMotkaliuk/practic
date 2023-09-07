@@ -5,6 +5,7 @@
 
     @include media(lg) {
         justify-content: center;
+        padding-top: 130px;
     }
 
     &:nth-child(1) {
@@ -55,16 +56,21 @@
 .side-image {
     position: relative;
 
-    @include media(lg) {
-        display: none;
-    }
-
     &__image {
         position: absolute;
         left: -150px;
         max-width: 230px;
         top: calc(100% - 115px);
         z-index: 10;
+
+        @include media(lg) {
+            left: 75px;
+            top: -350px;
+        }
+
+        @include media(xxs) {
+            left: 60px;
+        }
     }
 }
 
@@ -127,6 +133,10 @@
         margin: 0;
         padding: 50px 0 20px 100px;
         z-index: 1;
+
+        @include media(xxs) {
+            padding-left: 60px;
+        }
     }
 
     &__description {
@@ -138,12 +148,20 @@
         margin: 0;
         padding-left: 100px;
         z-index: 1;
+
+        @include media(xxs) {
+            padding-left: 60px;
+        }
     }
 
     &__link-wrapper {
         position: relative;
         padding-left: 100px;
         z-index: 1;
+
+        @include media(xxs) {
+            padding-left: 60px;
+        }
 
         @keyframes bounce {
 
