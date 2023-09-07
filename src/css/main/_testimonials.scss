@@ -12,17 +12,22 @@
         gap: 65px;
 
         @include media(md) {
-            box-sizing: border-box;
-            padding-bottom: $md-sm-btm-padding;
             padding-top: 30px;
             padding-bottom: 50px;
             gap: 30px;
         }
 
         @include media(sm) {
-            box-sizing: border-box;
-            padding-bottom: $md-sm-btm-padding;
+            gap: 20px;
+            padding: 30px 160px 50px;
+        }
+
+        @include media(xs) {
             padding: 30px 110px 50px;
+        }
+
+        @include media(xxxs) {
+            padding: 20px 80px 50px;
         }
 
     }
@@ -36,26 +41,28 @@
         text-align: center;
         z-index: 1;
 
+        @include media(xxxs) {
+            font-size: 25px;
+        }
+
     }
 
     &__right-backgroung-picture {
+        max-height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
 
+
     }
 
     &__left-backgroung-picture {
+        max-height: 100%;
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0;
         z-index: 0;
-
-        @include media(md) {
-            display: none;
-
-        }
 
     }
 
@@ -70,12 +77,13 @@
         }
 
         @include media(sm) {
+            gap: 30px;
             flex-direction: column;
         }
 
     }
-
 }
+
 
 .testimonial {
     z-index: 1;
@@ -86,13 +94,26 @@
     display: flex;
     gap: $gap;
 
+    @include media(xxs) {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
     &__img {
         border-radius: 50%;
         align-self: flex-start;
+
+        @include media(xxs) {
+            margin: 0 auto;
+        }
     }
 
     &__information {
         font-size: 16px;
+
+        @include media(xxs) {
+            text-align: center;
+        }
 
         &_user-name {
             font-weight: 500;
@@ -114,6 +135,9 @@
     }
 }
 
-img {
-    max-width: 100%;
-}
+
+// .clear-fix::after {
+//     content: '';
+//     display: block;
+//     clear: both;
+// }
