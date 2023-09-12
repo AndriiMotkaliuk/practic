@@ -3,18 +3,25 @@ $margin-left-img: 300px;
 .hero-block {
     padding-bottom: $desktop-btm-padding;
 
+    @include media(md) {
+        padding-bottom: $md-sm-btm-padding;
+    }
+
+    @include media(sm) {
+        padding-bottom: $md-sm-btm-padding;
+    }
+
     &__title {
         margin: 0;
         @include font-family(700, 80px, $color-darkblue, 1.1, normal, $title-font, normal);
 
         @include media(md) {
             font-size: 50px;
-            padding-bottom: $md-sm-btm-padding;
             padding-top: 92px;
         }
 
-        @include media(sm) {
-            font-size: 50px;
+        @include media(xxs) {
+            font-size: 43px;
         }
     }
 
@@ -26,6 +33,7 @@ $margin-left-img: 300px;
         @include media(sm) {
             margin: 0 auto;
             text-align: center;
+            max-width: 100%;
         }
     }
 
@@ -63,4 +71,8 @@ $margin-left-img: 300px;
     gap: 50px;
     position: relative;
     z-index: 1;
+
+    @include media(sm) {
+        gap: 25px;
+    }
 }
